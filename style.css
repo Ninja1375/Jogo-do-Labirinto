@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#maze-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    transition: background-color 0.3s ease;
+}
+
+.wall {
+    background-color: black;
+}
+
+.player {
+    background-color: blue;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.goal {
+    background-color: green;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.controls button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #aaa;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.restart-container {
+    margin-top: 20px;
+}
+
+.restart-container button {
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.restart-container button:hover {
+    background-color: #d32f2f;
+}
+
+@media (max-width: 600px) {
+    td {
+        width: 20px;
+        height: 20px;
+    }
+    .controls button {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
