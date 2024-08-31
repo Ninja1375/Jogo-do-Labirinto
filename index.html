@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Labirinto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Jogo do Labirinto</h1>
+    
+    <div class="info">
+        <p>Movimentos: <span id="moves">0</span></p>
+        <p>Tempo: <span id="time">0</span>s</p>
+    </div>
+
+    <div id="maze-container">
+        <table id="maze"></table>
+    </div>
+
+    <div class="controls">
+        <button id="up">↑</button>
+        <div>
+            <button id="left">←</button>
+            <button id="down">↓</button>
+            <button id="right">→</button>
+        </div>
+    </div>
+
+    <div class="restart-container">
+        <button id="restart">Reiniciar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
